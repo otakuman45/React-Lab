@@ -1,0 +1,34 @@
+# App.js
+
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+
+function App() {
+  return (
+    <div>
+      <Header title="My App" />
+      <Footer tagline="React App" />
+    </div>
+  );
+}
+
+export default App;
+
+
+# Header.js
+
+function Header({ title }) {
+  return <h1>{title}</h1>;
+}
+
+export default Header;
+
+
+# Footer.js
+
+function Footer({ tagline }) {
+  return <p>{tagline}</p>;
+}
+
+export default Footer;
